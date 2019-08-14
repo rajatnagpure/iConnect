@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+    <LinearLayout  android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="@color/graylight"
+                   android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+            <LinearLayout
+                    android:background="@drawable/gradientbackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_marginTop="45dp"
+                        android:foregroundGravity="center"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_horizontal"
+                        android:onClick="uploadImage"
+                        android:id="@+id/employee_img_id"
+                        android:src="@drawable/profile"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+                <!--<ImageView
+                        android:layout_marginTop="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:onClick="uploadImage"
+                        android:id="@+id/employee_img"
+                        android:src="@drawable/profile"/>-->
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lbl_name"
+                            android:textSize="25dp"
+                            android:text="Employee Name"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp">
+
+
+
+            <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lbl_desg"
+                        android:text="Marketing Executive"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:textStyle="bold"
+
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lbl_phone"
+                        android:text="+91 1234567890"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:textStyle="bold"
+
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lbl_email"
+                        android:text="employee@employer.com"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/button1"
+                android:textColor="#fff"
+                android:background="@drawable/s_b"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="183dp"
+                android:layout_height="56dp"
+                android:padding="5dp"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                android:text="Next"
+                android:onClick="NextPage"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="75dp"
+                   android:src="@drawable/iconnectblue"
+        />
+
+    </LinearLayout>
+</ScrollView>

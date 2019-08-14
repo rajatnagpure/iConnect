@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:layout_marginTop="2dp"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+    <RelativeLayout
+            android:layout_gravity="center"
+            android:paddingRight="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <ImageView
+            android:adjustViewBounds="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:id="@+id/next_visit_img"
+            android:background="@drawable/buttonstyleithgradient"
+    />
+        <TextView
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:text="9 May"
+                android:textColor="#ffffff"
+                android:id="@+id/next_demo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Rajat Nagpure"
+                    android:id="@+id/farmer_name"
+                    android:textColor="#000000"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="00/00/0000"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/text_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="1234567890"
+                    android:id="@+id/farmer_contact"
+                    android:textColor="#000000"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="CROP."
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/text_crop"
+                    android:layout_alignBaseline="@+id/text_crop"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="EGGPLANT"
+                    android:textColor="#000000"
+                    android:id="@+id/text_crop"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="wardha, wardha, maharashtra, india, asia"
+                    android:id="@+id/farmer_address"
+                    android:textColor="#000000"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="7dp"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="PRODUCT: "
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/text_product"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="PHOSPHORUS"
+                    android:textColor="#000000"
+                    android:id="@+id/text_enter_product"
+                    android:layout_toRightOf="@+id/text_product"
+                    android:layout_alignBaseline="@+id/text_product"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:text="Area:"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/text_demo_area"
+                    android:layout_alignBaseline="@+id/text_demo_area"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="WADHA"
+                    android:textColor="#000000"
+                    android:id="@+id/text_demo_area"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

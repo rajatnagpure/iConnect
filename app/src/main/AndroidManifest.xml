@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.qisystems.iconnect">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="false"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+            android:name=".App"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".demoplot.DemoPlotList"
+                  android:label="Demo Plots"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key"/>
+
+        <activity
+                android:name=".DayStart.StartDay"
+                android:label="Day Start"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".Authentication.IdCard">
+        </activity>
+        <activity android:name=".Authentication.SignUp">
+        </activity>
+        <activity android:name=".Authentication.Login">
+        </activity>
+        <activity android:name=".Authentication.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".tadaActivity.AddTada"
+                android:label="Add TA/DA"
+                android:parentActivityName=".tadaActivity.TadaList">
+        </activity>
+        <activity
+                android:name=".tadaActivity.TadaList"
+                android:label="@string/title_activity_tada_list"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".demoplot.DemoPlot"
+                android:label="Demo Plot"
+                android:parentActivityName=".demoplot.DemoPlotList">
+        </activity>
+        <activity
+                android:name=".OrderBook.OrderBook"
+                android:label="Order Book"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".OrderBook.OrderListView"
+                android:label="Order List"
+                android:parentActivityName=".OrderBook.OrderBook">
+        </activity>
+        <activity
+                android:name=".dealervisit.DealerVisit"
+                android:label="Dealer Visit"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".todolist.Todolist"
+                android:label="Todo List"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".distributor.Distributor"
+                android:label="Distributor List"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".scheme.Scheme"
+                android:label="Scheme List"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".distributor.adddistributor"
+                android:label="adddistributor list"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".ProductCatlog.Productcatlog"
+                android:label="Product Catlog"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".Feedback.Feedback"
+                android:label="Feedback Chat"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name">
+        </activity>
+
+        <provider
+                android:name=".data.IConnectProvider"
+                android:authorities="com.qisystems.iconnect"
+                android:exported="false"/>
+
+        <service
+                android:name=".notification.NotificationService"
+                android:enabled="true"/>
+        <service
+                android:name=".DayStart.GeofenceTrasitionService"
+                android:enabled="true"/>
+        <service
+                android:name=".DayStart.NotificationForegroundService"
+                android:enabled="true"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="@color/backgroundcolor"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".OrderBook.OrderBook"
+    >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sp_age_name"
+                    android:drawSelectorOnTop="false"
+            >
+
+            </Spinner>
+
+        </LinearLayout>
+        <View
+
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:hint="Product Name"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/startbluecolor"
+                    android:id="@+id/prod_name"
+                    android:nextFocusDown="@id/mrp"
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:hint="MRP*"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/startbluecolor"
+                    android:inputType="number"
+                    android:nextFocusDown="@id/qty"
+                    android:id="@+id/mrp"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:hint="Quantity*"
+                    android:textColorHint="@color/startbluecolor"
+                    android:inputType="number"
+                    android:nextFocusDown="@id/rate"
+                    android:id="@+id/qty"
+            />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Rate*"
+                    android:textColorHint="@color/startbluecolor"
+                    android:nextFocusDown="@id/pay_grp"
+                    android:id="@+id/rate"
+            />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/startbluecolor"
+                    android:layout_height="match_parent"
+                    android:text="Sub Total :"
+                    android:textSize="20dp"/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="match_parent"
+                    android:text="  0 "
+                    android:id="@+id/sub_tot"
+                    android:layout_marginLeft="82dp"
+                    android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:text="Payment  :"
+                    android:textStyle="italic"
+                    android:textColor="@color/startbluecolor"
+                    android:textSize="25dp"/>
+
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:outlineAmbientShadowColor="@color/startbluecolor"
+                    android:outlineSpotShadowColor="@color/startbluecolor"
+                    android:onClick="onRadioButtonClicked"
+                    android:id="@+id/pay_grp">
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:id="@+id/radio_credit"
+                        android:textColor="@color/startbluecolor"
+                        android:nextFocusDown="@id/save_book"
+                        android:text="CREDIT"/>
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/startbluecolor"
+                        android:nextFocusDown="@id/save_book"
+                        android:id="@+id/radio_cash"
+                        android:text="CASH"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/save_book"
+                    android:textColor="#fff"
+                    android:background="@drawable/sign_btn"
+                    android:layout_width="176dp"
+                    android:textSize="20sp"
+                    android:layout_height="71dp"
+                    android:text="Save"
+                    android:onClick="onSaveButtonClicked"
+                    android:layout_marginRight="30dp"
+
+            />
+
+            <Button
+                    android:id="@+id/btnshow_book"
+                    android:textColor="#fff"
+                    android:background="@drawable/sign_btn"
+                    android:layout_width="176dp"
+                    android:textSize="20sp"
+                    android:layout_height="71dp"
+                    android:onClick="btn_save_order"
+                    android:text="Show Order"
+
+
+            />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

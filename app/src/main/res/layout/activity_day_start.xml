@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            tools:context=".DayStart.StartDay">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="00/00/0000"
+                    android:id="@+id/text_date_start_day"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Start Time: "
+                    android:layout_alignBaseline="@id/text_time_start_day"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/text_time_start_day"
+                    android:layout_toLeftOf="@+id/text_time_start_day"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="00:00"
+                    android:id="@+id/text_time_start_day"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:text="START READING"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_height="wrap_content"/>
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:paddingRight="7dp"
+                        android:id="@+id/image_start_reading"
+                        android:src="@drawable/camera"
+                        android:foregroundGravity="center"
+                        android:contentDescription="@string/add_image_of_crop"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/roundedtextfield"
+                        android:layout_height="wrap_content" android:layout_marginStart="7dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:text="  READING IN KM .:  "
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:text="0     "
+                            android:id="@+id/text_start_reading"
+                            android:inputType="number"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="2dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center"
+                    android:layout_height="320dp"/>
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:text="END READING"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_height="wrap_content"/>
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:paddingLeft="7dp"
+                        android:id="@+id/image_end_reading"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/camera"
+                        android:foregroundGravity="center"
+                        android:contentDescription="@string/add_image_of_crop"/>
+                <LinearLayout
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/roundedtextfield"
+                        android:layout_height="wrap_content" android:layout_marginStart="7dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:text="  READING IN KM .:  "
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:text="0     "
+                            android:id="@+id/text-end_reading"
+                            android:textSize="20sp"
+                            android:inputType="number"
+                            android:textColor="@color/colorPrimary"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="PERSONAL USAGE IN KM .: "
+                    android:textSize="15sp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_height="wrap_content"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:text="00"
+                    android:id="@+id/text_personal_usage_day_start"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="370dp"
+                      android:background="@drawable/roundedtextfield"
+        >
+            <fragment android:id="@+id/map"
+                      android:name="com.google.android.gms.maps.SupportMapFragment"
+                      android:layout_width="match_parent"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_height="350dp"
+                      android:layout_centerHorizontal="true"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="21dp"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:text="DISTANCE (GPS) IN KM.: "
+                        android:textSize="15sp"
+                        android:layout_marginBottom="14dp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:text="00.00"
+                        android:id="@+id/Text_distance_travelled_day_start"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <Button
+                    android:layout_width="178dp"
+                    android:text="End Day"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/sign_btn"
+                    android:id="@+id/button_end_day"
+                    android:onClick="endDayButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="14dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_height="75dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

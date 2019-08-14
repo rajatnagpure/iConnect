@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        tools:context=".tadaActivity.AddTada">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sign_back"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_gravity="center"
+                android:id="@+id/button_tada_add"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:onClick="setTadaDate"
+                android:background="@drawable/sign_btn"
+                android:layout_width="176dp"
+                android:layout_height="71dp"
+                android:text="Date"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:paddingRight="7dp"
+                        android:id="@+id/image_start_reading_add_tada"
+                        android:foregroundGravity="center"
+                        android:contentDescription="@string/add_image_of_crop"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7dp"
+                        android:id="@+id/image_end_reading_add_tada"
+                        android:adjustViewBounds="true"
+                        android:foregroundGravity="center"
+                        android:contentDescription="@string/add_image_of_crop"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <EditText
+                android:hint="From*"
+                android:textColorHint="@color/startbluecolor"
+                android:ems="10"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/editable_from"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:textColorHint="@color/startbluecolor"
+                android:ems="10"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:hint="To*                                         "
+                android:layout_width="match_parent"
+                android:id="@+id/editable_to"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:textColorHint="@color/startbluecolor"
+                android:ems="10"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:hint="Distance                                "
+                android:id="@+id/editable_distance"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        <EditText
+
+                android:textColorHint="@color/startbluecolor"
+                android:ems="10"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:hint="Mode of Transport*              "
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:id="@+id/editable_mode"
+                android:layout_height="wrap_content"/>
+        <EditText
+
+                android:textColorHint="@color/startbluecolor"
+                android:ems="10"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:hint="Expense*                               "
+                android:id="@+id/editable_expense"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:textColorHint="@color/startbluecolor"
+                android:ems="10"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:hint="Other Expense*                    "
+                android:id="@+id/editable_other_expense"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_gravity="center"
+                android:id="@+id/button_submit_tada"
+                android:layout_width="176dp"
+                android:layout_marginTop="100dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:background="@drawable/sign_btn"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="71dp"
+                android:text="Submit"/>
+    </LinearLayout>
+</ScrollView>

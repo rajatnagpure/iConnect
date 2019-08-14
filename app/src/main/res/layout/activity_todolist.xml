@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:hint="Select Date"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+            <EditText
+
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/txtItem"
+                    android:layout_width="298dp"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Details"
+                    android:textColorHint="@color/startbluecolor"
+                    android:inputType="text"
+
+            />
+
+            <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/txtItem"
+                    android:background="@drawable/sign_btn"
+                    android:text="Add"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+
+            />
+        </LinearLayout>
+
+
+        <TextView
+                android:id="@android:id/empty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtItem"
+                android:gravity="center_horizontal"
+                android:text="empty" />
+
+
+        <ListView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtItem"
+                android:layout_marginBottom="100dp"
+                android:choiceMode="multipleChoice">
+
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+
+        <Button
+                android:id="@+id/btnDel1"
+                android:layout_width="176dp"
+                android:layout_height="71dp"
+                android:background="@drawable/sign_btn"
+                android:onClick="subdetails"
+                android:text="submit"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="italic"
+        />
+
+        <Button
+                android:id="@+id/btnDel"
+                android:layout_width="176dp"
+                android:layout_height="71dp"
+                android:background="@drawable/sign_btn"
+                android:text="Delete"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="#fff"
+                android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

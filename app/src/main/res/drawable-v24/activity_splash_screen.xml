@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:background="@drawable/bg_login"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="472dp"
+        android:src="@drawable/splash" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="Powered by:"
+        android:textAlignment="center"
+        android:gravity="center|top"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center|top"
+        android:text="QUINTESSENTIAL INFORMATICS SYSTEMS"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center|top"
+        android:text="RAMDASPETH,NAGPUR"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:gravity="center|top"
+        android:text="www.qisystems.in"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:background="@drawable/sign_back"
+        tools:context="com.qisystems.iconnect.Authentication.Login">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/logo_connect"
+            android:foregroundGravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/employee_img"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:textColorHint="#09C6DF"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="10dp">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:id="@+id/un_login"
+
+
+        />
+
+
+
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#09C6DF"
+            android:layout_marginTop="10dp"
+    >
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:ems="10"
+                android:textStyle="italic"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:id="@+id/ps_login"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+            android:id="@+id/btnlogin_1"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/s_b"
+            android:text="Login"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User ?"
+                android:textSize="20dp"
+        />
+        <TextView
+                android:layout_width="125dp"
+                android:id="@+id/btnsignup_1"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:onClick="signup"
+                android:textAlignment="center"
+                android:textColor="#09C6DF"
+                tools:ignore="OnClick"/>
+    </LinearLayout>
+
+</LinearLayout>

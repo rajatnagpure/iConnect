@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">iConnect</string>
+    <string name="dealers_name">Dealers Name</string>
+    <string name="products_name">Products</string>
+    <string name="add_image_of_crop">Add Image of crop</string>
+    <string name="title_activity_tada_list">TadaList</string>
+    <string name="title_activity_start_day">Map</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:layout_marginTop="2dp"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+    <RelativeLayout
+            android:layout_gravity="center"
+            android:paddingRight="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:id="@+id/next_visit_img"
+                android:background="@drawable/buttonstyleithgradient"
+        />
+        <TextView
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:text="CN"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:id="@+id/next_demo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="COMPANY NAME"
+                    android:id="@+id/company_name"
+                    android:textColor="#000000"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Distributor: " />
+
+            <TextView
+                    android:id="@+id/dist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginLeft="85dp"
+                    android:text="ABC Distributor"
+                    android:textColor="#000000" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="7dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="+91 9154895412"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#000000"
+                    android:id="@+id/dist_mob"
+                    android:layout_height="wrap_content"/>
+
+
+            <TextView
+                    android:id="@+id/dist_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/dist_mob"
+                    android:layout_marginLeft="45dp"
+                    android:layout_toRightOf="@+id/dist_mob"
+                    android:text="mail@gmail.com"
+                    android:textColor="#000000" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="ABS St, Gate Area, maharashtra, india"
+                    android:id="@+id/dist_address"
+                    android:textColor="#000000"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

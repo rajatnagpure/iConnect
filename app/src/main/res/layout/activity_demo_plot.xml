@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".demoplot.DemoPlot">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farmer Visit Detail"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+        />
+        <Button
+                android:layout_marginTop="50dp"
+                android:id="@+id/button1"
+                android:layout_gravity="center"
+                android:layout_width="176dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_height="72dp"
+                android:background="@drawable/sign_btn"
+                android:onClick="setDate"
+                android:text="Date" />
+
+        <EditText
+                android:layout_marginTop="20dp"
+                android:hint="Farmer's Full Name*"
+                android:textColorHint="@color/startbluecolor"
+                android:textSize="15dp"
+                android:nextFocusDown="@id/editable_contact"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:id="@+id/editable_name"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:hint="Contact*  "
+                android:textColorHint="@color/startbluecolor"
+                android:textSize="15dp"
+                android:nextFocusDown="@id/editable_village"
+                android:id="@+id/editable_contact"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:layout_marginTop="20dp"
+                android:hint="Village*"
+                android:textColorHint="@color/startbluecolor"
+                android:textSize="15dp"
+                android:nextFocusDown="@id/editable_district"
+                android:id="@+id/editable_village"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:hint="District*"
+                android:textColorHint="@color/startbluecolor"
+                android:textSize="15dp"
+                android:nextFocusDown="@id/editable_state"
+                android:layout_width="match_parent"
+                android:id="@+id/editable_district"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:hint="State*"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/startbluecolor"
+                android:textSize="20dp"
+                android:nextFocusDown="@id/editable_crop"
+                android:singleLine="true"
+                android:id="@+id/editable_state"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:hint="Crop*"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/startbluecolor"
+                android:textSize="15dp"
+                android:nextFocusDown="@id/product_text"
+                android:singleLine="true"
+                android:id="@+id/editable_crop"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/product_text"
+                    android:text="Product:"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"/>
+            <Spinner
+                    android:id="@+id/product_spinner"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignBaseline="@+id/product_text"
+                    android:prompt="@string/products_name"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:hint="Demo Area*               "
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/editable_demo_area"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <Switch android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Next Visit :"
+                    android:id="@+id/next_date_switch"
+                    android:layout_height="wrap_content"/>
+            <Button
+                    android:id="@+id/button2"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:clickable="false"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/sign_btn"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:onClick="setNextDate"
+                    android:text="N/A" />
+        </LinearLayout>
+        <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Crop Image:"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <android.support.constraint.ConstraintLayout
+
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_container"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                    android:id="@+id/imgv_photo"
+                    android:layout_width="@dimen/photo_width"
+                    android:layout_height="@dimen/photo_height"
+                    android:src="@drawable/camera"
+                    android:foregroundGravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/add_image_of_crop"/>
+
+        </android.support.constraint.ConstraintLayout>
+        <Button android:text="SUBMIT PLOT"
+                android:id="@+id/button_submit_plot"
+                android:layout_width="175dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/sign_btn"
+                android:layout_marginTop="30dp"
+                android:layout_height="75dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
